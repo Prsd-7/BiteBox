@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -42,4 +42,69 @@ nav a.active {
   color: red;
   font-weight: bold;
   border-bottom: 2px solid red;
+}
+.hero {
+  height:90vh;
+  background: url('../image/Lux_food_img.jpg') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hero button{
+  margin-top:15px;
+  padding:10px 20px;
+  background:red;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+.hero button:hover{
+  background:darkred;
+}
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap:40px;
+}
+.video-text{
+  flex:1;
+}
+.video-box{
+  flex:1;
+}
+.video-box video{
+  width:100%;
+  border-radius:10px;
+  height: 350px;
+  object-fit: cover;
+}
+.video-text h2{
+  font-size:32px;
+  margin-bottom:15px;
+}
+.video-text p{
+  font-size:18px;
+  color:#444;
+}
+/*ABOUT SECTION*/
+.about {
+  text-align:center;
+  padding: 60px 20px;
+  background-color:#f9f9f9;
+}
+.about h2 {
+  font-size:32px;
+  margin-bottom:20px;
+  color:rgba(255, 0, 0, 0.615);
+}
+.about p{
+  font-size:18px;
+  color:#555;
+  max-width:700px;
+  margin: auto;
+  line-height:1.6;
 }
