@@ -1,11 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - BiteBox</title>
-    </head>
-<body>
-    <h1>Menu</h1>
-    <p>Explore our delicious menu items!</p>
-</body>
+<html>
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+
+    <title>BiteBox</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/menu.css" />
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="../image/favicon/favicon.ico" />
+    <style>
+      li {
+        list-style-type: none;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/5f33b3b7aa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Start Header section-->
+     <header>
+      <nav>
+        <!-- Logo -->
+        <img src="../image/biteboxlogo.png" alt="BiteBox Logo" />
+        <!--Menu-->
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="BiteDeals.html">Bite Deals</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+          </li>
+          <li>
+            <a href="Login.html"
+              ><i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--End Header section-->
+
+    
+    
+    
+    
+    <!--Start Filter Section-->
+    <div class="category-icons">
+        <div class="icon-box">
+            <img src="../image/AllFood.jpg">
+            <p>All</p>
+        </div>
+
+        <div class="icon-box">
+            <img src="../image/burger-card1.png">
+            <p>Burger</p>
+        </div>
+
+        <div class="icon-box">
+            <img src="../image/mpizza-card2.png">
+            <p>Pizza</p>
+        </div>
+
+        <div class="icon-box">
+            <img src="../image/apasta-card4.jpg">
+            <p>Pasta</p>
+        </div>
+
+        <div class="icon-box">
+            <img src="../image/fries.jpg">
+            <p>Fries</p>
+        </div>
+
+        <div class="icon-box">
+            <img src="../image/coffee.jpg">
+            <p>Coffee</p>
+        </div>
+
+        <div class="icon-box">
+            <img src="../image/momos.jpg">
+            <p>Momos</p>
+        </div>
+    </div>
+    <!--End Filter section-->
+
+
+
+    <!--Start menu Section-->
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+
+            <div class="card">
+                <img src="../image/burger-card1.png">
+                <h3>Burger</h3>
+                <p>Cheese Burger</p>
+                <span>Rs.199</span>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../image/mpizza-card2.png">
+                <h3>Margerita Pizza</h3>
+                <p>Basil Cheese and Tomato sauce</p>
+                <span>Rs.249</span>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../image/cpizza-card3.png">
+                <h3>Chicken Pizza</h3>
+                <p>Pizza Sauce, Chicken breasts, spices</p>
+                <span>Rs.299</span>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="card">
+                <img src="../image/apasta-card4.jpg">
+                <h3>Alfredo Pasta</h3>
+                <p>Alfredo Pasta with creamy white sauce</p>
+                <span>Rs.199</span>
+                <button>Add to cart</button>
+            </div>
+        </div>
+    </section>
+    <!--End Menu Section-->
+
+
+
+  </body>
+  </html>
