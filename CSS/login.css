@@ -48,7 +48,7 @@ nav a.active {
 
 /*Login and SignUp css */
 .auth-container{
-  height: 200vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
