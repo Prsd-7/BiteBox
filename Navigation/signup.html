@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - BiteBox</title>
+    <title>SignUp - BiteBox</title>
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,10 +28,9 @@
         crossorigin="anonymous"
       ></script>
     </head>
-</head>
-<body>
-   
-      <header>
+    </head>
+    <body>
+        <header>
         <nav>
           <!-- Logo -->
           <img src="../image/biteboxlogo.png" alt="BiteBox Logo" />
@@ -51,19 +51,20 @@
         </nav>
       </header>
 
-      <!--Start Authentication Section-->
-      <section class="auth-contaiiner">
+      <!--Start authentication section-->
+      <section class="aut-container">
         <div class="auth-box">
-            <h2>Login to Bite<span>Box</span></h2>
             <form>
+                <input type="text" placeholder="Full Name" required>
                 <input type="email" placeholder="Enter Email" required>
-                <input type="password" placeholder="Enter password" required>
-                <button type="submit">Submit</button>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+
+                <button type="submit">SignUp</button>
             </form>
-            <p><a href="signup.html">Forgot password</a></p>
-            <p>Don't have an account<a href="signup.html">SignUp</a></p>
+            <p>Already have an account? <a href="Login.html">Login</a></p>
         </div>
       </section>
-      <!--End Authentication Section-->
-</body>
+      <!--end authentication section-->
+    </body>
 </html>
