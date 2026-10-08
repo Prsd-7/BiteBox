@@ -21,6 +21,12 @@
         li {
           list-style-type: none;
         }
+         small {
+          display: block;
+          color: red;
+          font-size: 0.8em;
+          margin-top: 4px; 
+        }
       </style>
       <script
         src="https://kit.fontawesome.com/5f33b3b7aa.js"
@@ -55,9 +61,15 @@
       <section class="auth-container">
         <div class="auth-box">
             <h2>Login to Bite<span>Box</span></h2>
-            <form>
-                <input type="email" placeholder="Enter Email" required>
-                <input type="password" placeholder="Enter password" required>
+            <form id="Login">
+              <div>
+                <input type="email" placeholder="Enter Email" id="LoginEmail">
+                <small></small>
+                </div>
+                <div>
+                <input type="password" placeholder="Enter password" id="LoginPassword">
+                <small></small>
+                </div>
                 <button type="submit">Submit</button>
             </form>
             <p><a href="signup.html">Forgot password</a></p>
@@ -65,5 +77,6 @@
         </div>
       </section>
       <!--End Authentication Section-->
+      <script src="LoginValidation.js"></script>
 </body>
 </html>

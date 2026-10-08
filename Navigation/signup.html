@@ -1,26 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp - BiteBox</title>
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!--GOOGLE FONTS-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet"
+      />
 
       <title>BiteBox</title>
       <!--CSS-->
       <link rel="stylesheet" href="../CSS/login.css" />
       <!--FAVICON-->
-      <link rel="icon" type="image/x-icon" href="../image/favicon/favicon.ico" />
+      <link
+        rel="icon"
+        type="image/x-icon"
+        href="../image/favicon/favicon.ico"
+      />
       <style>
         li {
           list-style-type: none;
+        }
+        small {
+          display: block;
+          color: red;
+          font-size: 0.8em;
+          margin-top: 4px; 
         }
       </style>
       <script
@@ -28,43 +40,59 @@
         crossorigin="anonymous"
       ></script>
     </head>
-    </head>
-    <body>
-        <header>
-        <nav>
-          <!-- Logo -->
-          <img src="../image/biteboxlogo.png" alt="BiteBox Logo" />
-          <!--Menu-->
-          <ul>
-            <li><a href="../index.html" class="active">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="BiteDeals.html">Bite Deals</a></li>
-            <li>
-              <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
-            </li>
-            <li>
-              <a href="Login.html"
-                ><i class="fa-solid fa-arrow-right-to-bracket"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Logo -->
+        <img src="../image/biteboxlogo.png" alt="BiteBox Logo" />
+        <!--Menu-->
+        <ul>
+          <li><a href="../index.html" class="active">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="BiteDeals.html">Bite Deals</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+          </li>
+          <li>
+            <a href="Login.html"
+              ><i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <!--Start authentication section-->
-      <section class="auth-container">
-        <div class="auth-box">
-            <form>
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Enter Email" required>
-                <input type="password" placeholder="Password" required>
-                <input type="password" placeholder="Confirm Password" required>
-
-                <button type="submit">SignUp</button>
-            </form>
-            <p>Already have an account? <a href="Login.html">Login</a></p>
-        </div>
-      </section>
-      <!--end authentication section-->
-    </body>
+    <!--Start authentication section-->
+    <section class="auth-container">
+      <div class="auth-box">
+        <form id="SignUp">
+          <div>
+          <input type="text" placeholder="Full Name" id="Full-Name" />
+          <small></small>
+          </div>
+          <div>
+          <input type="email" placeholder="Enter Email" id="Email" />
+          <small></small>
+          </div>
+          <div>
+          <input type="password" placeholder="Password" id="Password" />
+          <small></small>
+          </div>
+          <div>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="Confirm-Password"
+          />
+          <small></small>
+            </div>
+          <button type="submit">SignUp</button>
+        </form>
+        <p>Already have an account? <a href="Login.html">Login</a></p>
+      </div>
+    </section>
+    <!--end authentication section-->
+    <script src="FormValidation.js"></script>
+  </body>
 </html>
